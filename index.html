@@ -4,17 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cristina's Donuts</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
+    <video autoplay>
+        <source src="./src/video1.mp4" type="video/mp4">
+    </video>
+
+
     <main>
         <h1>Cristina's Just-in-Time Donuts</h1>
-        <form action="">
-            <label for="">Name</label>
-            <input type="text" placeholder="Cristina">
-            <input type="text" placeholder="15">
-            <input type="text" placeholder="Cristina">
+        <p>All donuts 0.50€ each, cake or glazed!</p>
+
+        <form name="orderform" action="donuts.php" method="POST">
+            <div class="image">FOTO</div>
+
+            <div class="form-info">
+                <div class="inputbox">
+                    <label for="customerName">Name</label>
+                    <input type="text" placeholder="Cristina">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="cakesamount"># of cake donuts</label>
+                    <input type="text" placeholder="15">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="glazedamount"># of glazed donuts</label>
+                    <input type="text" placeholder="4 dozen">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="pickuptime">Minutes 'til pickup</label>
+                    <input type="text" placeholder="10">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="subtotal">Subtotal</label>
+                    <input type="text" placeholder="31.50€">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="tax">Tax</label>
+                    <input type="text" placeholder="2.91€">
+                </div>
+                
+                <div class="inputbox">
+                    <label for="total"><strong>Total</strong></label>
+                    <input type="text" placeholder="34.41€">
+                </div>
+            </div>
+            
+            
         </form>
 
 
